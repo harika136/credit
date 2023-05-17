@@ -1,0 +1,11 @@
+## Explanation of the code
+
+We import the necessary libraries: requests, BeautifulSoup, and csv.
+
+The scrape_credit_cards function fetches the HTML content of the HDFC Bank credit card page, parses it using BeautifulSoup, and extracts the credit card details such as name, fee, reward points, lounge access, milestone benefit, and card fee reversal. It stores the details in a list called cards.
+
+The export_to_csv function takes the cards list and exports the data to a CSV file. It creates a CSV file named "credit_cards.csv" and writes the card details, including column headers, using the csv.writer object.
+
+In the main section, we call the scrape_credit_cards function to retrieve the credit card details and store them in the credit_cards variable. Then, we pass the credit_cards list to the export_to_csv function to export the data to a CSV file.
+
+By running the code, it will scrape the credit card details from the HDFC Bank website and create a CSV file named credit_cards.csv with the extracted details.
